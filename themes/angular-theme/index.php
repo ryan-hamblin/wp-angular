@@ -55,6 +55,12 @@
                         <a class="page-scroll" href="/">Home</a>
                     </li>
                     <li>
+                        <a class="" href='/about'>About</a>
+                    </li>
+                    <li>
+                        <a class="" href='/work'>Work</a>
+                    </li>
+                    <li>
                         <a class="" href='/blog'>Blog</a>
                     </li>
                 </ul>
@@ -67,15 +73,35 @@
     <div style="height: 100%" ng-view>
     
     </div>
-    <!-- Footer -->
-    <footer>
-        <div class="container content-section text-center">
-            <p>&copy; <?php echo date('Y') ?> Ryan Hamblin</p>
-            <a href="#page-top" class="btn btn-circle page-scroll">
-							<i class="fa fa-angle-double-up animated"></i>
-						</a>
-        </div>
-    </footer>
+
+	 <!-- Contact Section -->
+	<section id="contact" class="container content-section text-center">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>Feel free to drop a line!</h2>
+				<p><a href="mailto:ryanhca@gmail.com">ryanhca@gmail.com</a>
+				</p>
+				<ul class="list-inline banner-social-buttons">
+					<li>
+						<a href="https://twitter.com/ryanleehamblin" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+					</li>
+					<li>
+						<a href="https://github.com/ryanhca" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/pub/ryan-hamblin/a3/a7/a88" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+  <!-- Footer -->
+  <footer>
+      <div class="container content-section text-center">
+          <p>&copy; <?php echo date('Y') ?> Ryan Hamblin</p>
+      </div>
+  </footer>
 
     <!-- JavaScript includes-->
    

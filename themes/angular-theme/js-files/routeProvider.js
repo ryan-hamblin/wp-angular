@@ -15,6 +15,14 @@ app.config(function($routeProvider, $locationProvider){
 		templateUrl: '/partials/blog.html',
 		controller: 'Main'
 	})
+	.when('/work', {
+		templateUrl: '/partials/work.html',
+		controller: 'Main'
+	})
+	.when('/about', {
+		templateUrl: '/partials/about.html',
+		controller: 'Main'
+	})
 	.when('/:ID', {
 		templateUrl: '/partials/content.html',
 		controller: 'Content'
