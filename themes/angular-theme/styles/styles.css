@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #666;
+    background-color: #333;
 }
 
 html {
@@ -127,7 +127,7 @@ a:focus {
     display: inline-block;
     height: 200px;
     width: 150px;
-    background: url(/images/portfolio-portrait.jpg);
+    background: url(../images/portfolio-portrait.jpg);
     border-radius: 10px;
     margin-bottom: 25px;
 }
@@ -354,7 +354,9 @@ a:focus {
     color: #000;
     background-color: #42dca3;
 }
-
+ul li {
+    list-style: none;
+}
 ul.banner-social-buttons {
     margin-top: 0;
 }
@@ -408,3 +410,4 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+*/

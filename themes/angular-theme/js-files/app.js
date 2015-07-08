@@ -1,1 +1,1 @@
-var app = angular.module('wp-app', ['ngRoute']);
+var app = angular.module('wp-app', ['ngRoute', 'ngSanitize']);

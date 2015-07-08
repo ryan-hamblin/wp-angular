@@ -2,7 +2,6 @@
 <html lang="en" ng-app="wp-app">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +11,7 @@
     <title>Ryan Hamblin | Software Engineer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo get_template_directory_uri(); ?>/styles/bootstrap.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="<?php echo get_template_directory_uri(); ?>/styles/styles.css" rel="stylesheet">
@@ -40,7 +39,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll " href="#page-top">
+                <a class="navbar-brand page-scroll " href="/">
                     <i class="fa fa-home"></i><span class="light">Hamblin</span>
                 </a>
             </div>
@@ -53,7 +52,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Home</a>
+                        <a class="page-scroll" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="" href='/blog'>Blog</a>
                     </li>
                 </ul>
             </div>
@@ -62,100 +64,9 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
-		<header class="intro">
-			<div class="intro-body">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<h1 class="brand-heading">{{name}}</h1>
-							<p class="intro-text">Software Engineer in Salt Lake City, Utah</p>
-						<a href="#about" class="btn btn-circle page-scroll">
-							<i class="fa fa-angle-double-down animated"></i>
-						</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<!-- About Section -->
-		<section id="about" class="container content-section text-center">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="portrait">
-					</div>
-					<h2>About Ryan</h2>
-					<p>Hey there! My name is Ryan and I amd a Software Engineer. My journey began in the fall of 2014 when I took an about face turn from "Outdoor Recreation Professional" to Web Development <a href="http://startbootstrap.com/template-overviews/grayscale/"></a></p>
-					<a href="#work" class="btn btn-circle page-scroll">
-						<i class="fa fa-angle-double-down animated"></i>
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<!-- Work Experience-->
-		<section id="work" class="container content-section text-center">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h1>Work Experience</h1>
-					<div class="col-md-4 ">
-						<h3><a href="http://www.lifevantage.com" targe="_blank">LifeVantage</a></h3>
-						<h5>UI/UX Developer</h5>
-						<p>fill fill fill</p>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="http://www.devmounta.in" targe="_blank">DevMountain</a></h3>
-						<h5>Student Mentor</h5>
-						<p>fill fill fill</p>
-					</div>
-					<div class="col-md-4">
-						<h3><a href="http://www.qzzr.com" targe="_blank">Qzzr</a></h3>
-						<h5>Web Developer Intern</h5>
-						<p>fill fill fill</p>
-					</div>
-				</div>
-			</div>
-			<div class="container text-center">
-					<h3>Skill Set</h3>
-					<ul>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>JavaScript</li>
-						<li>AngularJS</li>
-						<li>JQuery</li>
-						<li>NodeJS</li>
-						<li>Express</li>
-					</ul>
-				</div>
-				
-					<a href="#contact" class="btn btn-circle page-scroll">
-						<i class="fa fa-angle-double-down animated"></i>
-					</a>
-		</section>
-
-    <!-- Contact Section -->
-		<section id="contact" class="container content-section text-center">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h2>Feel free to drop a line!</h2>
-					<p><a href="mailto:ryanhca@gmail.com">ryanhca@gmail.com</a>
-					</p>
-					<ul class="list-inline banner-social-buttons">
-						<li>
-							<a href="https://twitter.com/ryanleehamblin" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-						</li>
-						<li>
-							<a href="https://github.com/ryanhca" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/pub/ryan-hamblin/a3/a7/a88" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+    <div style="height: 100%" ng-view>
     
+    </div>
     <!-- Footer -->
     <footer>
         <div class="container content-section text-center">
@@ -170,6 +81,7 @@
    
     <script src="<?php echo get_template_directory_uri(); ?>/angular/angular.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/angular-route/angular-route.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/ng-sanitize/ng-sanitize.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js-files/app.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js-files/mainCtrl.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js-files/routeProvider.js"></script>
@@ -177,9 +89,6 @@
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwyjqIxmqeW9Up3oBq52O--bZi8r66eAM&sensor=false"></script>
-
-    <!-- Custom Theme JavaScript -->
- 		<script src="js-files/theme.js"></script> 
 
 </body>
 

@@ -1,18 +1,22 @@
 var app = angular.module('wp-app');
 
 app.config(function($routeProvider, $locationProvider){
-	$locationProvider.html5Mode(true)
+	$locationProvider.html5Mode({
+		enabled: true,
+		requireBase: false
+	});
+
 	$routeProvider
 	.when('/', {
-		templateUrl: "main.html",
+		templateUrl: "/partials/main.html",
 		controller: 'Main'
 	})
-	.when('/demo', {
-		templateUrl: 'demo.html',
+	.when('/blog', {
+		templateUrl: '/partials/blog.html',
 		controller: 'Main'
 	})
 	.when('/:ID', {
-		templateUrl: 'content.html',
-		controller: 'contentCtrl'
+		templateUrl: '/partials/content.html',
+		controller: 'Content'
 	})
 });
