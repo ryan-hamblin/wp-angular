@@ -1,0 +1,12 @@
+
+<section class='container content-section text-left'>
+<h1>Life and Times of an Aspiring Software Engineer</h1>
+<h3>Latest posts</h3>
+	<div ng-repeat="post in posts">
+
+		<ul>
+			<h2><li><a href="{{post.ID}}">{{post.title}}</a></li></h2>
+			<li ng-bind-html="post.excerpt"></li>
+		</ul>
+	</div>
+</section>
